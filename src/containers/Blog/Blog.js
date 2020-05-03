@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
-import {Link, Route, Switch} from 'react-router-dom';
+import {Link,Route, Switch} from 'react-router-dom';
 
 import Courses from '../Courses/Courses';
-import Course from '../Course/Course';
 import Users from '../Users/Users';
+import FullCourse from '../FullCourse/FullCourse';
+
 
 class Blog extends Component{
 	render() {
@@ -21,14 +22,14 @@ class Blog extends Component{
 
 					<Route
 						path='/users'
-						component={Users}
+						component={Users}						
 						exact
 					/>
 					<Route
-						path='/course'
-						component={Course}
+						path='/:id'
 						exact
-					/>
+						component={FullCourse}
+					/>					
 					<Route
 						path='/'
 						component={Courses}					
