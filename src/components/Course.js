@@ -8,8 +8,11 @@ import './Course.module.css';
 const course = (props) => (
 	<NavLink 
 		className='Course' 
-		key={props.key}
-		to={'/' + props.id}
+		to={{
+			pathname:'/'+props.title,
+			id: props.id
+		}}
+		id={props.id}
 		>
 		{props.title}
 	</NavLink>

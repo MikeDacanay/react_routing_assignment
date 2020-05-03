@@ -26,9 +26,9 @@ class Blog extends Component{
 						exact
 					/>
 					<Route
-						path='/:id'
-						exact
+						path='/:title'
 						component={FullCourse}
+						exact
 					/>					
 					<Route
 						path='/'
