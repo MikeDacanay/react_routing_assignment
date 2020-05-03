@@ -4,7 +4,6 @@ import {Link,Route, Switch} from 'react-router-dom';
 
 import Courses from '../Courses/Courses';
 import Users from '../Users/Users';
-import FullCourse from '../FullCourse/FullCourse';
 
 
 class Blog extends Component{
@@ -24,12 +23,7 @@ class Blog extends Component{
 						path='/users'
 						component={Users}						
 						exact
-					/>
-					<Route
-						path='/:title'
-						component={FullCourse}
-						exact
-					/>					
+					/>												
 					<Route
 						path='/'
 						component={Courses}					

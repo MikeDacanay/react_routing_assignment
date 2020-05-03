@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {Route, NavLink} from 'react-router-dom'; 
+import {Route} from 'react-router-dom'; 
 
 import FullCourse from '../FullCourse/FullCourse';
 
@@ -22,15 +22,6 @@ class Courses extends Component {
 
 
     render () {
-        // let course = <p style={{textAlign: 'center'}}>Select a course!</p>;
-        
-        // if(this.state.activeCourse){
-        //     course = <Route
-        //         path={'/:id'}
-        //         exact
-        //         component={Course}                  
-        //     />
-        // };
         return (
             <div>
                 <h1>Amazing Udemy Courses</h1>
@@ -47,7 +38,13 @@ class Courses extends Component {
                         } )
                     }
                 </section>                                        
-            </div>
+                <Route
+                    path='/:title'
+                    component={FullCourse}
+                    exact
+                />  
+
+            </div>            
         );
     }
 }
