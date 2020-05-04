@@ -10,7 +10,8 @@ const course = (props) => {
 		<article 
 			className='Course' 
 			onClick={props.clicked}	
-			id={props.id}	
+			id={props.id}
+				
 			>
 			{props.title}
 		</article>

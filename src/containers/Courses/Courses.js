@@ -40,7 +40,7 @@ class Courses extends Component {
                     }
                 </section>                                        
                 <Route
-                    path={this.props.match.url + ':title'}
+                    path={this.props.match.url + '/:title'}
                     exact
                     component={FullCourse}
                 />  
@@ -53,7 +53,7 @@ class Courses extends Component {
     courseSelectedHandler = (title, id) => {
         // this.props.history.push('/'+title);
         this.props.history.push({
-            pathname: '/'+title,
+            pathname: '/courses/'+title,
             id: id 
         });
     }

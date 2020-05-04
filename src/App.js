@@ -25,6 +25,6 @@ export default App;
               //4   <li>Pass the course ID to the "Course" page and output it there</li>
               //5   <li>Pass the course title to the "Course" page - pass it as a param or score bonus points by passing it as query params (you need to manually parse them though!)</li>
               //6   <li>Load the "Course" component as a nested component of "Courses"</li>
-        //7   <li>Add a 404 error page and render it for any unknown routes</li>
+              //7   <li>Add a 404 error page and render it for any unknown routes</li>
         //8   <li>Redirect requests to /all-courses to /courses (=> Your "Courses" page)</li>
         // </ol>
