@@ -33,19 +33,29 @@ class Courses extends Component {
                                     key={course.id}
                                     title={course.title}
                                     id={course.id}
+                                    clicked={()=>this.courseSelectedHandler(course.title, course.id)}
                                 />     
                             )
                         } )
                     }
                 </section>                                        
                 <Route
-                    path='/:title'
-                    component={FullCourse}
+                    path={this.props.match.url + ':title'}
                     exact
+                    component={FullCourse}
                 />  
 
             </div>            
         );
+    }
+
+    //Linking Programmatically
+    courseSelectedHandler = (title, id) => {
+        // this.props.history.push('/'+title);
+        this.props.history.push({
+            pathname: '/'+title,
+            id: id 
+        });
     }
 }
 

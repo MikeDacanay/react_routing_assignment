@@ -22,7 +22,6 @@ class Blog extends Component{
 					<Route
 						path='/users'
 						component={Users}						
-						exact
 					/>												
 					<Route
 						path='/'
